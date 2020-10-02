@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
             title: Text('PDM Chat System'),
             backgroundColor: Colors.amberAccent,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text('from epool'),
+              title: Text('from hang'),
             ),
           ),
           SliverList(
