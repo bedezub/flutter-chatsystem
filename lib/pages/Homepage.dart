@@ -9,23 +9,24 @@ class HomePage extends StatelessWidget {
           SliverAppBar(
             pinned: true,
             expandedHeight: 100,
-            title: Text('PDM Chat System'),
-            backgroundColor: Colors.amberAccent,
+            // title: Text('PDM Chat System'),
+            backgroundColor: Colors.blueAccent,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text('from ADO DEN Haang'),
+              title: Text('PDRM Chat System'),
             ),
           ),
           SliverList(
-              delegate: SliverChildBuilderDelegate(
-            (context, index) {
-              return Container(
-                color: Colors.blue,
-                width: 200,
-                height: 150,
-              );
-            },
-            childCount: 4,
-          ))
+            delegate: SliverChildBuilderDelegate(
+              (context, index) {
+                return Container(
+                  color: Colors.white,
+                  width: 200,
+                  height: 150,
+                );
+              },
+              childCount: 4,
+            ),
+          ),
         ],
       ),
     );
