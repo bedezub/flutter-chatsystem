@@ -1,6 +1,8 @@
 // TopBar and BottomBar
-import 'package:chatsystem/pages/Home.dart';
+import 'package:chatsystem/pages/Chats.dart';
+import 'package:chatsystem/pages/ColorContainer.dart';
 import 'package:chatsystem/pages/News.dart';
+import 'package:chatsystem/pages/Settings.dart';
 import 'package:flutter/material.dart';
 
 class NavBar extends StatefulWidget {
@@ -14,9 +16,10 @@ class _NavBarState extends State<NavBar> {
   final List<Widget> _children = [
     // Home(Colors.orange),
     News(),
-    Home(Colors.green),
-    Home(Colors.pinkAccent),
-    Home(Colors.yellow),
+    Chats(),
+    // ColorContainer(Colors.green),
+    // ColorContainer(Colors.pinkAccent),
+    ColorContainer(Colors.yellow),
   ];
 
   @override
@@ -27,15 +30,21 @@ class _NavBarState extends State<NavBar> {
           return <Widget>[
             SliverAppBar(
               expandedHeight: 200.0,
-              floating: false,
-              // title: Text(
-              //   "PDRM Chat System",
-              //   style: TextStyle(
-              //     color: Colors.white,
-              //     fontSize: 16.0,
-              //   ),
-              // ),
               pinned: true,
+              floating: false,
+              snap: false,
+              actions: <Widget>[
+                IconButton(
+                  icon: Icon(Icons.settings),
+                  tooltip: 'Settings',
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Settings()),
+                    );
+                  },
+                ),
+              ],
               flexibleSpace: FlexibleSpaceBar(
                 centerTitle: true,
                 title: Text(
@@ -53,10 +62,21 @@ class _NavBarState extends State<NavBar> {
             ),
           ];
         },
-        // body: CustomScrollView(),
-        body: _children[_currentIndex],
+        body: _children[_currentIndex], //stateless widget goes here
+        // body: GestureDetector(
+        //   onPanUpdate: (details) {
+        //     if (details.delta.dx > 0) {
+        //       print("go left");
+        //       if (_currentIndex == 1) {
+        //         _children[_currentIndex] = News();
+        //       }
+        //     } else if (details.delta.dx < 0) {
+        //       print("go right");
+        //     }
+        //   },
+        //   child: _children[_currentIndex], //stateless widget goes here,
+        // ),
       ),
-      // body: _children[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         onTap: onTabTapped,
         currentIndex: _currentIndex,
@@ -105,20 +125,6 @@ class _NavBarState extends State<NavBar> {
               ),
             ),
           ),
-          new BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person,
-              // color: Colors.black,
-            ),
-            title: Text(
-              'Profile',
-              style: TextStyle(
-                color: Colors.black,
-                fontStyle: FontStyle.italic,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
         ],
       ),
     );
@@ -126,8 +132,11 @@ class _NavBarState extends State<NavBar> {
 
   //bottom nav bar navigation
   void onTabTapped(int index) {
-    setState(() {
-      _currentIndex = index;
-    });
+    setState(
+      () {
+        _currentIndex = index;
+      },
+    );
+    print(_currentIndex);
   }
 }
