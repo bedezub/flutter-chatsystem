@@ -1,0 +1,15 @@
+//INI TEST SAJA
+import 'package:flutter/material.dart';
+
+class Home extends StatelessWidget {
+  final Color color;
+
+  Home(this.color);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: color,
+    );
+  }
+}
