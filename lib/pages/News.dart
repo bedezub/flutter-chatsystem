@@ -34,15 +34,22 @@ class News extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      "Last updated on ",
+                      "Get the latest news here.",
                       style: TextStyle(
                         color: Colors.black,
                       ),
                     ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, bottom: 20),
+                child: Row(
+                  children: [
                     Text(
-                      "01 December 2019 | 15:32:03",
+                      "Last updated on 01 December 2019 | 15:32:03",
                       style: TextStyle(
-                        color: Colors.black,
+                        color: Colors.grey,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.bold,
                       ),
@@ -53,66 +60,66 @@ class News extends StatelessWidget {
             ],
           ),
         ),
-        Container(
-          width: MediaQuery.of(context).size.width,
-          color: Colors.black12,
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Column(
-                children: [
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(left: 15, top: 20, bottom: 20),
-                    child: Text(
-                      "50 Items",
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Column(
-                children: [
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(left: 160, top: 20, bottom: 20),
-                    child: Container(
-                      alignment: Alignment.centerRight,
-                      child: Row(
-                        children: <Widget>[
-                          Text(
-                            "edit",
-                            textAlign: TextAlign.right,
-                            style: TextStyle(
-                              color: Colors.pinkAccent,
-                              fontSize: 17,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          SizedBox(
-                            width: 7,
-                          ),
-                          Text(
-                            "delete",
-                            textAlign: TextAlign.right,
-                            style: TextStyle(
-                              color: Colors.pinkAccent,
-                              fontSize: 17,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
+        // Container(
+        //   width: MediaQuery.of(context).size.width,
+        //   color: Colors.black12,
+        //   child: Row(
+        //     crossAxisAlignment: CrossAxisAlignment.start,
+        //     children: <Widget>[
+        //       Column(
+        //         children: [
+        //           Padding(
+        //             padding:
+        //                 const EdgeInsets.only(left: 15, top: 20, bottom: 20),
+        //             child: Text(
+        //               "50 Items",
+        //               style: TextStyle(
+        //                 fontSize: 20,
+        //                 color: Colors.black,
+        //               ),
+        //             ),
+        //           ),
+        //         ],
+        //       ),
+        //       Column(
+        //         children: [
+        //           Padding(
+        //             padding:
+        //                 const EdgeInsets.only(left: 160, top: 20, bottom: 20),
+        //             child: Container(
+        //               alignment: Alignment.centerRight,
+        //               child: Row(
+        //                 children: <Widget>[
+        //                   Text(
+        //                     "edit",
+        //                     textAlign: TextAlign.right,
+        //                     style: TextStyle(
+        //                       color: Colors.pinkAccent,
+        //                       fontSize: 17,
+        //                       fontWeight: FontWeight.bold,
+        //                     ),
+        //                   ),
+        //                   SizedBox(
+        //                     width: 7,
+        //                   ),
+        //                   Text(
+        //                     "delete",
+        //                     textAlign: TextAlign.right,
+        //                     style: TextStyle(
+        //                       color: Colors.pinkAccent,
+        //                       fontSize: 17,
+        //                       fontWeight: FontWeight.bold,
+        //                     ),
+        //                   ),
+        //                 ],
+        //               ),
+        //             ),
+        //           ),
+        //         ],
+        //       ),
+        //     ],
+        //   ),
+        // ),
       ],
     );
   }
