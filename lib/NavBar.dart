@@ -1,7 +1,7 @@
 // TopBar and BottomBar
 import 'package:chatsystem/pages/Chats.dart';
-import 'package:chatsystem/pages/ColorContainer.dart';
 import 'package:chatsystem/pages/News.dart';
+import 'package:chatsystem/pages/Notifications.dart';
 import 'package:chatsystem/pages/Settings.dart';
 import 'package:flutter/material.dart';
 
@@ -14,12 +14,10 @@ class _NavBarState extends State<NavBar> {
   int _currentIndex = 0;
   //page inside tab, stateless widget idk
   final List<Widget> _children = [
-    // Home(Colors.orange),
     News(),
     Chats(),
-    // ColorContainer(Colors.green),
-    // ColorContainer(Colors.pinkAccent),
-    ColorContainer(Colors.yellow),
+    Notifications(),
+    // ColorContainer(Colors.yellow),
   ];
 
   @override
@@ -29,6 +27,7 @@ class _NavBarState extends State<NavBar> {
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return <Widget>[
             SliverAppBar(
+              backgroundColor: Color.fromRGBO(0, 0, 76, 1),
               expandedHeight: 200.0,
               pinned: true,
               floating: false,
@@ -52,6 +51,8 @@ class _NavBarState extends State<NavBar> {
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'HelveticaNeue',
                   ),
                 ),
                 background: Image.network(
@@ -118,7 +119,7 @@ class _NavBarState extends State<NavBar> {
               // color: Colors.black,
             ),
             title: Text(
-              'Notification',
+              'Notifications',
               style: TextStyle(
                 // color: Colors.black,
                 fontWeight: FontWeight.bold,
@@ -137,6 +138,6 @@ class _NavBarState extends State<NavBar> {
         _currentIndex = index;
       },
     );
-    print(_currentIndex);
+    // print(_currentIndex);
   }
 }

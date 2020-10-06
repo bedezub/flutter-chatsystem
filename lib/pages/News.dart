@@ -6,13 +6,19 @@ class News extends StatelessWidget {
     return Column(
       children: [
         Container(
+          decoration: BoxDecoration(
+            border: Border(
+              bottom: BorderSide(width: 2.0, color: Colors.amber),
+            ),
+            color: Colors.white,
+          ),
           width: MediaQuery.of(context).size.width,
-          color: Colors.white,
+          // color: Colors.white,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(left: 20, top: 20),
+                padding: const EdgeInsets.only(left: 20, top: 25),
                 child: Row(
                   children: [
                     Text(
@@ -21,6 +27,7 @@ class News extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                         color: Colors.black,
+                        fontFamily: 'HelveticaNeue',
                       ),
                     ),
                   ],
@@ -43,7 +50,7 @@ class News extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 20, bottom: 20),
+                padding: const EdgeInsets.only(left: 20, bottom: 37),
                 child: Row(
                   children: [
                     Text(

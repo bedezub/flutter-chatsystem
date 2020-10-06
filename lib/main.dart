@@ -1,6 +1,5 @@
 import 'package:chatsystem/NavBar.dart';
 
-import 'package:chatsystem/pages/Homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +14,7 @@ class PDRM extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        // fontFamily: 'HelveticaNeue',
       ),
       home: NavBar(),
     );
@@ -102,7 +102,6 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
-
     );
   }
 }

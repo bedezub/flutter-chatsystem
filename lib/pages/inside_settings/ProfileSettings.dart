@@ -12,6 +12,7 @@ class ProfileSettings extends StatelessWidget {
             fontSize: 20.0,
           ),
         ),
+        backgroundColor: Color.fromRGBO(0, 0, 127, 1),
       ),
       body: ListView(
         children: <Widget>[
