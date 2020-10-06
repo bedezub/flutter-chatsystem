@@ -62,7 +62,7 @@ flutter:
   # example:
 
   fonts:
-    - family: Schyler
+    - family: HelveticaNeue
       fonts:
 #          - asset: fonts/Schyler-Regular.ttf
         - asset: fonts/HelveticaNeuBold.ttf

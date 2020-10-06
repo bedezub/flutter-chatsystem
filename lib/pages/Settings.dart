@@ -26,6 +26,12 @@ class Settings extends StatelessWidget {
               );
             },
             child: Container(
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(width: 2.0, color: Colors.black12),
+                ),
+                color: Colors.white,
+              ),
               height: 70,
               // color: Colors.red,
               child: Padding(
@@ -57,6 +63,12 @@ class Settings extends StatelessWidget {
           GestureDetector(
             onTap: () {},
             child: Container(
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(width: 2.0, color: Colors.black12),
+                ),
+                color: Colors.white,
+              ),
               height: 70,
               // color: Colors.grey[300],
               child: Padding(
@@ -88,6 +100,12 @@ class Settings extends StatelessWidget {
           GestureDetector(
             onTap: () {},
             child: Container(
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(width: 2.0, color: Colors.black12),
+                ),
+                color: Colors.white,
+              ),
               height: 70,
               // color: Colors.grey[300],
               child: Padding(
@@ -119,6 +137,12 @@ class Settings extends StatelessWidget {
           GestureDetector(
             onTap: () {},
             child: Container(
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(width: 2.0, color: Colors.black12),
+                ),
+                color: Colors.white,
+              ),
               height: 70,
               // color: Colors.grey[300],
               child: Padding(

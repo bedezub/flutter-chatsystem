@@ -229,7 +229,7 @@ class Chats extends StatelessWidget {
                               image: new DecorationImage(
                                 fit: BoxFit.cover,
                                 image: new NetworkImage(
-                                    "https://vignette.wikia.nocookie.net/gtawiki/images/b/bd/BigSmoke-GTASA.jpg/revision/latest/top-crop/width/360/height/450?cb=20190208154953"),
+                                    "https://www.pngkey.com/png/detail/118-1186180_big-smoke-face-png-jpg-royalty-free-download.png"),
                               ),
                             ),
                           ),

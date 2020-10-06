@@ -52,18 +52,28 @@ class _NavBarState extends State<NavBar> {
                     color: Colors.white,
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold,
-                    fontFamily: 'HelveticaNeue',
+                    // fontFamily: 'HelveticaNeue',
                   ),
                 ),
                 background: Image.network(
-                  "https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&h=350",
+                  "http://viraverna.ir/wp-content/uploads/2017/11/digital-marketing-hero.jpg",
                   fit: BoxFit.cover,
                 ),
               ),
             ),
           ];
         },
-        body: _children[_currentIndex], //stateless widget goes here
+        body: Container(
+          decoration: BoxDecoration(
+              // image: DecorationImage(
+              // image: NetworkImage(
+              //     "https://www.bakercommunications.com/images/pattern-icons/2.png"),
+              //   fit: BoxFit.cover,
+              // ),
+              ),
+          child: _children[_currentIndex], //stateless widget goes here,
+        ),
+        // body: _children[_currentIndex], //stateless widget goes here
         // body: GestureDetector(
         //   onPanUpdate: (details) {
         //     if (details.delta.dx > 0) {
