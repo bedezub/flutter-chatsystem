@@ -1,4 +1,3 @@
-import 'package:chatsystem/pages/inside_settings/ProfileSettings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -9,12 +8,12 @@ class Chats extends StatelessWidget {
       children: <Widget>[
         Container(
           // width: MediaQuery.of(context).size.width,
-          color: Colors.white,
+          // color: Colors.white,
           child: Column(
             // crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(left: 20, top: 20),
+                padding: const EdgeInsets.only(left: 20, top: 25),
                 child: Row(
                   children: [
                     Text(
@@ -32,7 +31,7 @@ class Chats extends StatelessWidget {
                 height: 10,
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 20, bottom: 20),
+                padding: const EdgeInsets.only(left: 20, bottom: 37),
                 child: Row(
                   children: [
                     Text(
@@ -45,6 +44,12 @@ class Chats extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          decoration: BoxDecoration(
+            border: Border(
+              bottom: BorderSide(width: 2.0, color: Colors.amber),
+            ),
+            color: Colors.white,
           ),
         ),
         GestureDetector(
@@ -125,7 +130,7 @@ class Chats extends StatelessWidget {
                                   WidgetSpan(
                                     child: Padding(
                                       padding:
-                                          const EdgeInsets.only(right: 15.0),
+                                          const EdgeInsets.only(right: 10.0),
                                       child: Icon(
                                         Icons.arrow_back,
                                         size: 18.0,
@@ -151,7 +156,7 @@ class Chats extends StatelessWidget {
                     // color: Colors.red,
                     width: 70,
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         RichText(
                           // textAlign: TextAlign.center,
@@ -162,12 +167,25 @@ class Chats extends StatelessWidget {
                             ),
                             children: [
                               TextSpan(
-                                text: '10:33',
+                                text: '10:45',
                                 style: TextStyle(color: Colors.black54),
                               ),
                             ],
                           ),
                         ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Center(
+                            child: Column(
+                              children: [
+                                Icon(
+                                  Icons.mail,
+                                  color: Colors.transparent,
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
                       ],
                     ),
                   )
@@ -254,7 +272,7 @@ class Chats extends StatelessWidget {
                                   WidgetSpan(
                                     child: Padding(
                                       padding:
-                                          const EdgeInsets.only(right: 15.0),
+                                          const EdgeInsets.only(right: 10.0),
                                       child: Icon(
                                         Icons.arrow_back,
                                         size: 18.0,
@@ -297,6 +315,19 @@ class Chats extends StatelessWidget {
                             ],
                           ),
                         ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Center(
+                            child: Column(
+                              children: [
+                                Icon(
+                                  Icons.mail,
+                                  color: Colors.transparent,
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
                       ],
                     ),
                   )
@@ -383,7 +414,7 @@ class Chats extends StatelessWidget {
                                   WidgetSpan(
                                     child: Padding(
                                       padding:
-                                          const EdgeInsets.only(right: 15.0),
+                                          const EdgeInsets.only(right: 10.0),
                                       child: Icon(
                                         Icons.arrow_forward,
                                         size: 18.0,
@@ -409,7 +440,7 @@ class Chats extends StatelessWidget {
                     // color: Colors.red,
                     width: 70,
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         RichText(
                           // textAlign: TextAlign.center,
@@ -426,6 +457,19 @@ class Chats extends StatelessWidget {
                             ],
                           ),
                         ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Center(
+                            child: Column(
+                              children: [
+                                Icon(
+                                  Icons.mail,
+                                  color: Colors.blueAccent,
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
                       ],
                     ),
                   )

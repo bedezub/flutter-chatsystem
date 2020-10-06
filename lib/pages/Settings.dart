@@ -14,6 +14,7 @@ class Settings extends StatelessWidget {
             fontSize: 20.0,
           ),
         ),
+        backgroundColor: Color.fromRGBO(0, 0, 127, 1),
       ),
       body: ListView(
         children: <Widget>[
@@ -26,7 +27,7 @@ class Settings extends StatelessWidget {
             },
             child: Container(
               height: 70,
-              // color: Colors.grey[300],
+              // color: Colors.red,
               child: Padding(
                 padding: const EdgeInsets.only(left: 20.0),
                 child: Row(
